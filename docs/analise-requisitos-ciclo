@@ -1,0 +1,62 @@
+# Análise de Requisitos – Detecção de Fraudes Financeiras
+Responsável: Isabella
+Projeto: IEEE – Detecção de Fraudes Financeiras
+
+## 1. Objetivo do projeto
+O projeto tem como objetivo desenvolver um modelo capaz de identificar possíveis fraudes em transações realizadas com cartão de crédito, utilizando técnicas de aprendizado de máquina.
+Para isso, será utilizada a base Credit Card Fraud Detection, disponibilizado no Kaggle pelo Machine Learning Group da ULB. A ideia é utilizar as informações presentes na base para treinar e avaliar um modelo que consiga diferenciar transações legítimas de fraudulentas.
+Um dos principais desafios é que a quantidade de fraudes é muito menor do que a de transações legítimas. Por isso, não basta que o modelo tenha uma alta taxa de acertos no geral. É importante verificar se ele realmente consegue identificar as fraudes.
+
+## 2. Usuários do sistema
+O sistema é pensado principalmente para instituições financeiras e equipes responsáveis pelo monitoramento e pela prevenção de fraudes.
+Os clientes também são beneficiados indiretamente, já que a identificação de transações suspeitas pode ajudar a evitar prejuízos e aumentar a segurança das operações.
+
+## 3. Requisitos funcionais
+Os requisitos funcionais representam o que esperamos que o sistema consiga fazer durante sua execução.
+RF01 – Carregamento dos dados: permitir a leitura da base de dados utilizada no projeto.
+RF02 – Preparação dos dados: verificar valores ausentes, duplicidades e possíveis inconsistências antes de utilizar os dados no modelo.
+RF03 – Classificação: classificar as transações como legítimas ou fraudulentas.
+RF04 – Apresentação dos resultados: apresentar as classificações realizadas pelo modelo e permitir a visualização dos resultados.
+RF05 – Avaliação: calcular métricas que permitam analisar o desempenho do modelo e identificar seus principais erros.
+
+## 4. Requisitos não funcionais
+Os requisitos não funcionais estão relacionados à qualidade e à organização do sistema.
+RNF01 – Desempenho: o modelo deve apresentar resultados adequados para a identificação de fraudes.
+RNF02 – Confiabilidade: os resultados precisam permitir a identificação dos acertos e erros cometidos durante as classificações.
+RNF03 – Eficiência: o processamento dos dados deve acontecer de maneira adequada aos recursos disponíveis.
+RNF04 – Organização: o código e as etapas do projeto devem estar organizados e documentados.
+RNF05 – Reprodutibilidade: os procedimentos devem permitir que outras pessoas executem novamente as etapas do projeto e comparem os resultados.
+
+## 5. Prioridade dos requisitos
+Considerando o objetivo principal do projeto, os requisitos foram organizados de acordo com sua importância.
+Prioridade alta:
+Carregamento e preparação dos dados.
+Classificação das transações.
+Avaliação do desempenho do modelo.
+Confiabilidade dos resultados.
+Organização e documentação do código.
+Reprodutibilidade dos procedimentos.
+Prioridade média:
+Apresentação dos resultados.
+Eficiência do processamento.
+Essas prioridades podem ser revistas conforme o desenvolvimento do projeto.
+
+## 6. Critérios de aceitação
+Para verificar se o sistema está atendendo ao que foi proposto, foram definidos alguns critérios:
+CA01: a base de dados deve ser carregada corretamente, permitindo acessar suas informações.
+CA02: devem ser verificadas a existência de valores ausentes, duplicidades e outras inconsistências, registrando as decisões tomadas durante a preparação dos dados.
+CA03: o modelo deve conseguir classificar as transações entre legítimas e fraudulentas.
+CA04: os resultados devem permitir identificar os acertos e erros das classificações, incluindo falsos positivos e falsos negativos.
+CA05: o desempenho deve ser analisado por meio de métricas adequadas para uma base de dados desbalanceada.
+CA06: os resultados da regressão logística devem ser comparados com um modelo de referência (baseline).
+CA07: o código e os procedimentos realizados devem estar documentados, permitindo a reprodução das etapas.
+
+## 7. Avaliação do modelo
+Como a base utilizada possui uma quantidade muito pequena de fraudes em comparação com as transações legítimas, a acurácia não deve ser utilizada como única forma de avaliação.
+Por isso, serão consideradas a matriz de confusão, a precisão, a revocação (Recall), o F1 da classe fraude e a AUPRC. A acurácia também poderá ser apresentada, mas apenas como uma informação complementar.
+A intenção é comparar a regressão logística com o baseline e observar principalmente quantas fraudes o modelo consegue identificar e quantas transações legítimas acaba classificando incorretamente como fraude.
+Também será importante considerar a divisão estratificada entre treino e teste, mantendo a proporção de fraudes nos dois conjuntos.
+
+## 8. Validação
+Os requisitos serão acompanhados durante o desenvolvimento do projeto e conferidos por meio dos testes realizados com a base de dados.
+Depois da implementação do modelo, os resultados serão analisados pelo grupo para verificar se os objetivos foram alcançados e se será necessário realizar algum ajuste.
