@@ -1,4 +1,4 @@
-\# Resumo de métricas para dados desbalanceados
+# Resumo de métricas para dados desbalanceados
 
 
 Responsável: Henrique
