@@ -9,7 +9,7 @@ Projeto: IEEE – Detecção de Fraudes Financeiras
 
 
 
-O dataset Credit Card Fraud Detection reúne 284.807 transações, das quais apenas 492 são fraudes, o que corresponde a cerca de 0,172% do total. Esses números constam na descrição pública da base e serão conferidos no arquivo creditcard.csv. Em um conjunto com essa proporção, a classe de interesse é raríssima, e é justamente ela que o modelo precisa identificar.
+O dataset Credit Card Fraud Detection reúne 284.807 transações, das quais apenas 492 são fraudes, o que corresponde a cerca de 0,172% do total. Esses números constam na descrição pública da base e foram confirmados no arquivo creditcard.csv. Em um conjunto com essa proporção, a classe de interesse é raríssima, e é justamente ela que o modelo precisa identificar.
 
 
 
